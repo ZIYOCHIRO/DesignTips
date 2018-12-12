@@ -18,10 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gradients" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqh-2f-BeD">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gradients" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqh-2f-BeD">
+                                <rect key="frame" x="0.0" y="50" width="375" height="36"/>
+                                <color key="backgroundColor" name="linkColor" catalog="System" colorSpace="catalog"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.99658946699999995" green="0.79159131299999996" blue="0.20040956779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tnU-Fw-qId" customClass="GradientView" customModule="Gradients" customModuleProvider="target">
@@ -42,6 +43,11 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nqh-2f-BeD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Nz4-SJ-awC"/>
+                            <constraint firstAttribute="trailing" secondItem="nqh-2f-BeD" secondAttribute="trailing" id="cZB-gC-GRz"/>
+                            <constraint firstItem="nqh-2f-BeD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="i42-YE-Xqj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="FirstColor">
