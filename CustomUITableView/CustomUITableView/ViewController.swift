@@ -27,6 +27,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         tableView.estimatedRowHeight = 44
         tableView.rowHeight = UITableView.automaticDimension
+        // Add header and footer in code or in storyboard
+        let headerView = UIView() // if header/footer view doesn't have size, it won't show
+        headerView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 50)
+        headerView.backgroundColor = UIColor.blue
+        let footerView = UIView()
+        footerView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 50)
+        footerView.backgroundColor = UIColor.green
+        tableView.tableHeaderView = headerView
+        tableView.tableFooterView = footerView
+        
     }
     
     // Table view delegate functions
