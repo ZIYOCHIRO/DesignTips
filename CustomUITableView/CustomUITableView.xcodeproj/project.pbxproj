@@ -14,6 +14,7 @@
 		0D49EB4421C09A93002124FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D49EB4221C09A93002124FF /* LaunchScreen.storyboard */; };
 		0D49EB4F21C09A93002124FF /* CustomUITableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49EB4E21C09A93002124FF /* CustomUITableViewTests.swift */; };
 		0D49EB5A21C09A93002124FF /* CustomUITableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49EB5921C09A93002124FF /* CustomUITableViewUITests.swift */; };
+		0D49EB6821C0BC7D002124FF /* TableViewHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49EB6721C0BC7D002124FF /* TableViewHeaderCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0D49EB5521C09A93002124FF /* CustomUITableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomUITableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D49EB5921C09A93002124FF /* CustomUITableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITableViewUITests.swift; sourceTree = "<group>"; };
 		0D49EB5B21C09A93002124FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D49EB6721C0BC7D002124FF /* TableViewHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeaderCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				0D49EB3921C09A92002124FF /* AppDelegate.swift */,
 				0D49EB3B21C09A92002124FF /* ViewController.swift */,
+				0D49EB6721C0BC7D002124FF /* TableViewHeaderCell.swift */,
 				0D49EB3D21C09A92002124FF /* Main.storyboard */,
 				0D49EB4021C09A93002124FF /* Assets.xcassets */,
 				0D49EB4221C09A93002124FF /* LaunchScreen.storyboard */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D49EB6821C0BC7D002124FF /* TableViewHeaderCell.swift in Sources */,
 				0D49EB3C21C09A92002124FF /* ViewController.swift in Sources */,
 				0D49EB3A21C09A92002124FF /* AppDelegate.swift in Sources */,
 			);
