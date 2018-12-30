@@ -9,12 +9,37 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var buttons: [UIButton]!
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        for button in buttons {
+            button.layer.cornerRadius = 8
+        }
     }
 
-
+    @IBAction func pulseButtonTapped(_ sender: UIButton) {
+        sender.pulsate()
+    }
+    
+    @IBAction func flashButtonTapped(_ sender: UIButton) {
+        sender.flash()
+    }
+ 
+    
+    @IBAction func shakeButtonTapped(_ sender: UIButton) {
+        sender.shake()
+    }
+    
+    
+    
+    
+    
+    
+    
 }
+
+
 
