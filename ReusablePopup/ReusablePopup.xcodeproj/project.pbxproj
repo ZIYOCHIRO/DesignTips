@@ -64,11 +64,11 @@
 		0D75CAFE21E9DE44002565A7 /* ReusablePopup */ = {
 			isa = PBXGroup;
 			children = (
-				0D75CAFF21E9DE44002565A7 /* AppDelegate.swift */,
 				0D75CB2021EA1563002565A7 /* MainVC */,
 				0D75CB1821EA1001002565A7 /* DateVC */,
 				0D75CB1D21EA1044002565A7 /* TimeVC */,
 				0D75CB0821E9DE46002565A7 /* Assets.xcassets */,
+				0D75CAFF21E9DE44002565A7 /* AppDelegate.swift */,
 				0D75CB0A21E9DE46002565A7 /* LaunchScreen.storyboard */,
 				0D75CB0D21E9DE46002565A7 /* Info.plist */,
 			);

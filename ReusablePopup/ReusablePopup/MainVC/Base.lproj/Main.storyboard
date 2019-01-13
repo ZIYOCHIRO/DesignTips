@@ -32,7 +32,7 @@
                                         <rect key="frame" x="263" y="0.0" width="80" height="30"/>
                                         <state key="normal" title="Select Date"/>
                                         <connections>
-                                            <segue destination="0Kw-Te-VpC" kind="presentation" id="ZjD-tS-6k4"/>
+                                            <segue destination="0Kw-Te-VpC" kind="presentation" identifier="fromFirstVCToDatePopupVC" id="ZjD-tS-6k4"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -146,6 +146,6 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="svI-UA-KsH"/>
+        <segue reference="ZjD-tS-6k4"/>
     </inferredMetricsTieBreakers>
 </document>

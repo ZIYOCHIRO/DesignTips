@@ -17,7 +17,10 @@ class SelectTimeViewController: UIViewController {
     
     @IBAction func selectTime(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "DatePopupViewController", bundle: nil)
-        let popup = storyboard.instantiateInitialViewController()!
+        let popup = storyboard.instantiateInitialViewController()! as! DatePopupViewController
+        // 2.use storyboard to get VC, then passing data
+        popup.showTimePicker = true
+        
         self.present(popup, animated: true)
     }
     
