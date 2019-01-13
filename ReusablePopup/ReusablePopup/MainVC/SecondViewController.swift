@@ -10,9 +10,24 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet weak var dateLabel: UILabel!
+    var observer: NSObjectProtocol?
+  
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        observer = NotificationCenter.default.addObserver(forName: .saveDateTime, object: nil, queue: OperationQueue.main) { (notification) in
+            let dateVC = notification.object as! DatePopupViewController
+            self.dateLabel.text = dateVC.formattedDate
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        if let observer = observer {
+            NotificationCenter.default.removeObserver(observer)
+        }
     }
 
 

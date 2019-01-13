@@ -17,6 +17,7 @@
 		0D75CB1721EA0F03002565A7 /* DatePopupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D75CB1521EA0F03002565A7 /* DatePopupViewController.storyboard */; };
 		0D75CB1C21EA103C002565A7 /* SelectTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D75CB1B21EA103C002565A7 /* SelectTimeViewController.swift */; };
 		0D75CB1F21EA10F8002565A7 /* SelectTimeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D75CB1E21EA10F8002565A7 /* SelectTimeViewController.storyboard */; };
+		0D75CB2221EB15CD002565A7 /* NotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D75CB2121EB15CD002565A7 /* NotificationNameExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		0D75CB1621EA0F03002565A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ReusablePopup/Base.lproj/DatePopupViewController.storyboard; sourceTree = "<group>"; };
 		0D75CB1B21EA103C002565A7 /* SelectTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimeViewController.swift; sourceTree = "<group>"; };
 		0D75CB1E21EA10F8002565A7 /* SelectTimeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectTimeViewController.storyboard; sourceTree = "<group>"; };
+		0D75CB2121EB15CD002565A7 /* NotificationNameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				0D75CB1D21EA1044002565A7 /* TimeVC */,
 				0D75CB0821E9DE46002565A7 /* Assets.xcassets */,
 				0D75CAFF21E9DE44002565A7 /* AppDelegate.swift */,
+				0D75CB2121EB15CD002565A7 /* NotificationNameExtension.swift */,
 				0D75CB0A21E9DE46002565A7 /* LaunchScreen.storyboard */,
 				0D75CB0D21E9DE46002565A7 /* Info.plist */,
 			);
@@ -179,6 +182,7 @@
 				0D75CB0421E9DE44002565A7 /* SecondViewController.swift in Sources */,
 				0D75CB1C21EA103C002565A7 /* SelectTimeViewController.swift in Sources */,
 				0D75CB1421EA07CE002565A7 /* DatePopupViewController.swift in Sources */,
+				0D75CB2221EB15CD002565A7 /* NotificationNameExtension.swift in Sources */,
 				0D75CB0021E9DE44002565A7 /* AppDelegate.swift in Sources */,
 				0D75CB0221E9DE44002565A7 /* FirstViewController.swift in Sources */,
 			);

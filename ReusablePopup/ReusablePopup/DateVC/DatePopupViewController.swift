@@ -13,7 +13,22 @@ class DatePopupViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var saveButton: UIButton!
+    
     var showTimePicker: Bool = false
+    var formattedDate: String {
+        get {
+            let formatter = DateFormatter()
+            formatter.dateStyle = .medium
+            return formatter.string(from: datePicker.date)
+        }
+    }
+    var formattedTime: String {
+        get {
+            let formatter = DateFormatter()
+            formatter.timeStyle = .short
+            return formatter.string(from: datePicker.date)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +41,8 @@ class DatePopupViewController: UIViewController {
     
     
     @IBAction func saveDate(_ sender: Any) {
+        // add notifaction center to broadcast message
+        NotificationCenter.default.post(name: Notification.Name.saveDateTime, object: self)
         dismiss(animated: true)
     }
     
