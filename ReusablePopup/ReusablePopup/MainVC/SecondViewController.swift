@@ -11,25 +11,24 @@ import UIKit
 class SecondViewController: UIViewController {
 
     @IBOutlet weak var dateLabel: UILabel!
-    var observer: NSObjectProtocol?
-  
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        observer = NotificationCenter.default.addObserver(forName: .saveDateTime, object: nil, queue: OperationQueue.main) { (notification) in
-            let dateVC = notification.object as! DatePopupViewController
-            self.dateLabel.text = dateVC.formattedDate
+
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "fromSecondVCToDatePopupVC" {
+            let popup = segue.destination as! DatePopupViewController
+            popup.showTimePicker = false
+            // 1.assign a function
+            popup.onSave = onSave
+//            // 2.using a closure
+//            popup.onSave = { (data: String) -> () in
+//                self.dateLabel.text = data
+//            }
         }
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        
-        if let observer = observer {
-            NotificationCenter.default.removeObserver(observer)
-        }
+    func onSave(_ data: String) -> () {
+        dateLabel.text = data
     }
-
 
 }
 
