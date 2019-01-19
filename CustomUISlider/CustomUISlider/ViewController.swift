@@ -14,10 +14,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     
+    @IBAction func sliderChanged(_ sender: UISlider) {
+        percentSlider.value = roundf(percentSlider.value)
+    }
     
 
 
